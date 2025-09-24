@@ -1,0 +1,51 @@
+# === Python build artifacts ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# === Virtual environments ===
+.venv/
+venv/
+ENV/
+env/
+
+# === Env variables ===
+*.env
+.env
+
+# === IDE / OS ===
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# === Logs / cache ===
+*.log
+*.out
+*.err
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# === Docker ===
+/docker-data/
+.docker/
+*.pid
+
+# === Databases (agar lokal ishlatsang) ===
+*.sqlite3
+*.db
+
+# === Static & uploads (agar generatsiya qilinsa) ===
+/static/uploads/
+
+
