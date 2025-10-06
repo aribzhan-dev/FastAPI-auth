@@ -48,4 +48,13 @@ htmlcov/
 # === Static & uploads (agar generatsiya qilinsa) ===
 /static/uploads/
 
+# pipenv fayls
+Pipfile
+Pipfile.lock
+
+certs/
+
+
+.idea/
+
 
