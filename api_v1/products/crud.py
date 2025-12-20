@@ -2,8 +2,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.engine import Result
 from sqlalchemy import select
 from .schemas import ProductCreate
-from FastAPI_auth_project.api_v1.products.schemas import ProductCreate
-from FastAPI_auth_project.core.models import Product
+from core.models import Product
 
 
 async def get_products(session: AsyncSession) -> list[Product]:

@@ -11,7 +11,8 @@ from fastapi.responses import HTMLResponse
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
-
+from api_v1 import router as router_v1
+from core.config import Settings
 
 
 
@@ -29,7 +30,9 @@ app = FastAPI(lifespan=lifespan)
 # app.include_router(items_router)
 # app.include_router(users_router, tags=["Users"])
 app.include_router(demo_router, tags=["Auth"])
+app.include_router(router=router_v1, prefix=Settings.api_prefix)
 app.mount("/static", StaticFiles(directory="static"), name="static")
+
 
 
 
